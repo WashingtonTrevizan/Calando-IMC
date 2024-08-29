@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root{
-    --primary-color: rgb(6, 104, 71);
+    --primary-color: rgb(207, 97, 23);
 }
 
 *{
@@ -12,7 +12,8 @@
 body{
     margin: 0;
     padding: 0;
-    background: var(--primary-color);
+    background-image: url(../img/background.imc.svg); 
+    background-size: cover;
     font-family: 'Rubik', sans-serif;
     font-size: 1.3em;
     line-height: 1.5em;
@@ -50,10 +51,11 @@ form button{
     height: 40px;
     cursor: pointer;
     margin-top: 20px;
+    border-radius: 15px;
 }
 
 form button:hover{
-    background: rgb(2, 29, 20);
+    background: rgb(73, 31, 3);
 
 }
 form button:active{
@@ -63,17 +65,34 @@ form button:active{
 #altura::placeholder{
     font-size: 1rem;
     font-style: italic;
+    color: rgb(190, 186, 186);
 }
 #peso::placeholder{
     font-size: 1rem;
     font-style: italic;
+        color: rgb(190, 186, 186);
 }
 .paragrafo-resultado{
     background: #89d47a;
     padding: 10px;
+    border-radius: 15px;
 }
 
 .bad {
     background: rgb(230, 92, 92);
     padding: 10px;
+    border-radius: 15px;
+}
+
+@media (max-width:490px) {
+    .container{
+        max-width: 80%;
+    }
+
+}
+@media (max-width:550px) {
+    .container{
+        max-width: 90%;
+        font-size: 1rem;
+    }
 }
