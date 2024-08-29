@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --primary-color: rgb(6, 104, 71);
+}
+
+*{
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container{
+    max-width: 640px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form input, form label, form button{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input{
+    font-size: 24px;
+    height: 40px;
+    padding: 0 20px;
+}
+
+form input:focus {
+    outline: 1.5px solid var(--primary-color);
+}
+form button{
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+form button:hover{
+    background: rgb(2, 29, 20);
+
+}
+form button:active{
+    background: red;
+}
+
+#altura::placeholder{
+    font-size: 1rem;
+    font-style: italic;
+}
+#peso::placeholder{
+    font-size: 1rem;
+    font-style: italic;
+}
+.paragrafo-resultado{
+    background: #89d47a;
+    padding: 10px;
+}
+
+.bad {
+    background: rgb(230, 92, 92);
+    padding: 10px;
+}
